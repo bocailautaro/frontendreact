@@ -1,27 +1,25 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-
-import Home from './pages/Home';
-import About from './pages/About';
-import Resources from './pages/Resources';
-import Contact from './pages/Contact';
-import Header from './components/layout/Header';
-import Nav from './components/layout/Nav';
-import Footer from './components/layout/Footer';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import './App.css';
+import Navbar from './components/Navbar';
+import Home from './components/pages/Home';
+import About from './components/pages/About';
+import Resources from './components/pages/Resources';
+import Contact from './components/pages/Contact';
 
 function App() {
   return (
-    <Router>
-      <Header/>
-        <Nav/>
+    <>
+      <Router>
+        <Navbar />
         <Switch>
-          <Route path="/" exact component={Home}/>
-          <Route path="Sobre LB" exact component={About}/>
-          <Route path="Recursos" exact component={Resources}/>
-          <Route path="Contacto" exact component={Contact}/>
+          <Route path='/' exact component={Home} />
+          <Route path='/about' component={About} />
+          <Route path='/resources' component={Resources} />
+          <Route path='/contact' component={Contact} />
         </Switch>
-      <Footer/>
-    </Router>
+      </Router>
+    </>
   );
 }
 

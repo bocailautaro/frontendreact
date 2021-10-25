@@ -1,0 +1,47 @@
+.contact-form {
+    width: 450px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 7px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    border: none;
+    margin-bottom: 20px;
+    font-size: 17px;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#button {
+    background: #31384a;
+    color: #fff;
+    padding: 20px;
+}
+
+#button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    form {
+        width: 100%;
+    }
+}
